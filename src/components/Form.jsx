@@ -15,23 +15,12 @@ const Form = (props) => {
           region: "na1",
           portalId: "21261306",
           formId: "84c4c03a-f566-4a2d-b925-bd862cb2e053",
+          cssRequired: '',
+          cssClass: 'label { color: \'white\'}'
           target: "#hubspotForm",
         });
       }
     });
-    let css = '.hs-form-field label { color: white; }',
-    head = document.head || document.getElementsByTagName('head')[0],
-    style = document.createElement('style');
-
-head.appendChild(style);
-
-style.type = 'text/css';
-if (style.styleSheet){
-  // This is required for IE8 and below.
-  style.styleSheet.cssText = css;
-} else {
-  style.appendChild(document.createTextNode(css));
-}
   }, []);
 
   return (
