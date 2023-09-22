@@ -16,7 +16,7 @@ const Form = (props) => {
           portalId: "21261306",
           formId: "84c4c03a-f566-4a2d-b925-bd862cb2e053",
           cssRequired: '',
-          cssClass: 'label { color: \'white\'}'
+          cssClass: 'label { color: \'white\'}',
           target: "#hubspotForm",
         });
       }
